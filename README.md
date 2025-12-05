@@ -191,7 +191,11 @@ Comma-separated lists of base and target images can be passed, or wildcard patte
 **1- Serial Correlation:** 
 
 ```bash
-python3 scripts/batch_correlation.py batch_correlate BASE_IMG_1.TIF,BASE_IMG_2.TIF TARGET_IMG_1.TIF,TARGET_IMG_2.TIF --output_path output/ --show --serialpython3 scripts/batch_correlation.py batch_correlate BASE_IMG_1.TIF,BASE_IMG_2.TIF "Target/*.TIF" --output_path output/ --show --all
+python3 scripts/batch_correlation.py batch_correlate BASE_IMG_1.TIF,BASE_IMG_2.TIF TARGET_IMG_1.TIF,TARGET_IMG_2.TIF --output_path output/ --show --serial
+```
+
+```bash
+python3 scripts/batch_correlation.py batch_correlate BASE_IMG_1.TIF,BASE_IMG_2.TIF "Target/*.TIF" --output_path output/ --show --all
 
 ```
 **2- All Combinations Correlation:**
